@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8387A1431BF2DE1D00E4FCA6 /* Pods.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8387A1421BF2DE1D00E4FCA6 /* Pods.framework */; };
 		83AB860A1BF1531700A543DB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83AB86091BF1531700A543DB /* AppDelegate.swift */; };
 		83AB860C1BF1531700A543DB /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83AB860B1BF1531700A543DB /* ViewController.swift */; };
 		83AB860E1BF1531700A543DB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 83AB860D1BF1531700A543DB /* Assets.xcassets */; };
@@ -17,6 +18,7 @@
 		83AB863F1BF1533B00A543DB /* ShareViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83AB863E1BF1533B00A543DB /* ShareViewController.swift */; };
 		83AB86421BF1533B00A543DB /* ShareViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 83AB86401BF1533B00A543DB /* ShareViewController.xib */; };
 		83AB86461BF1533B00A543DB /* Kitty Share Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 83AB86381BF1533B00A543DB /* Kitty Share Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		8688057B45B04FF46B779B47 /* Pods.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6851F28717D3AE35BD13FF92 /* Pods.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -58,6 +60,9 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		2FD321927D7426804834029F /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
+		6851F28717D3AE35BD13FF92 /* Pods.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		8387A1421BF2DE1D00E4FCA6 /* Pods.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Pods.framework; path = Pods/../build/Debug/Pods.framework; sourceTree = "<group>"; };
 		83AB86061BF1531700A543DB /* Kitty.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Kitty.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		83AB86091BF1531700A543DB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		83AB860B1BF1531700A543DB /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -76,6 +81,7 @@
 		83AB863E1BF1533B00A543DB /* ShareViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShareViewController.swift; sourceTree = "<group>"; };
 		83AB86411BF1533B00A543DB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/ShareViewController.xib; sourceTree = "<group>"; };
 		83AB86431BF1533B00A543DB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8EDAB63DE3E0D3F808444851 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -83,6 +89,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8688057B45B04FF46B779B47 /* Pods.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -104,12 +111,22 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8387A1431BF2DE1D00E4FCA6 /* Pods.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		20A9DE20BB513AD5273A4B82 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				2FD321927D7426804834029F /* Pods.debug.xcconfig */,
+				8EDAB63DE3E0D3F808444851 /* Pods.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		83AB85FD1BF1531700A543DB = {
 			isa = PBXGroup;
 			children = (
@@ -118,6 +135,8 @@
 				83AB86251BF1531700A543DB /* KittyUITests */,
 				83AB86391BF1533B00A543DB /* Kitty Share Extension */,
 				83AB86071BF1531700A543DB /* Products */,
+				20A9DE20BB513AD5273A4B82 /* Pods */,
+				876C11034E3EBFAE3A4E88EC /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -182,6 +201,15 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		876C11034E3EBFAE3A4E88EC /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				8387A1421BF2DE1D00E4FCA6 /* Pods.framework */,
+				6851F28717D3AE35BD13FF92 /* Pods.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -189,10 +217,13 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 83AB862B1BF1531700A543DB /* Build configuration list for PBXNativeTarget "Kitty" */;
 			buildPhases = (
+				A30155F39B434708B343C1D7 /* Check Pods Manifest.lock */,
 				83AB86021BF1531700A543DB /* Sources */,
 				83AB86031BF1531700A543DB /* Frameworks */,
 				83AB86041BF1531700A543DB /* Resources */,
 				83AB864A1BF1533B00A543DB /* Embed App Extensions */,
+				CB2523AC8D6F1A9C63B2242B /* Embed Pods Frameworks */,
+				9AAD4E763FCBEB6B4849266A /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -244,6 +275,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 83AB86471BF1533B00A543DB /* Build configuration list for PBXNativeTarget "Kitty Share Extension" */;
 			buildPhases = (
+				7BFC4EBBFB141246F6C0ABD6 /* Check Pods Manifest.lock */,
 				83AB86341BF1533B00A543DB /* Sources */,
 				83AB86351BF1533B00A543DB /* Frameworks */,
 				83AB86361BF1533B00A543DB /* Resources */,
@@ -269,6 +301,7 @@
 				TargetAttributes = {
 					83AB86051BF1531700A543DB = {
 						CreatedOnToolsVersion = 7.1;
+						DevelopmentTeam = 94C3W2AV74;
 					};
 					83AB86161BF1531700A543DB = {
 						CreatedOnToolsVersion = 7.1;
@@ -280,6 +313,7 @@
 					};
 					83AB86371BF1533B00A543DB = {
 						CreatedOnToolsVersion = 7.1;
+						DevelopmentTeam = 94C3W2AV74;
 					};
 				};
 			};
@@ -338,6 +372,69 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		7BFC4EBBFB141246F6C0ABD6 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		9AAD4E763FCBEB6B4849266A /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A30155F39B434708B343C1D7 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		CB2523AC8D6F1A9C63B2242B /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		83AB86021BF1531700A543DB /* Sources */ = {
@@ -495,10 +592,10 @@
 		};
 		83AB862C1BF1531700A543DB /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2FD321927D7426804834029F /* Pods.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				COMBINE_HIDPI_IMAGES = YES;
-				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
 				INFOPLIST_FILE = Kitty/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = co.rocketapps.Kitty;
@@ -508,10 +605,10 @@
 		};
 		83AB862D1BF1531700A543DB /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8EDAB63DE3E0D3F808444851 /* Pods.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				COMBINE_HIDPI_IMAGES = YES;
-				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
 				INFOPLIST_FILE = Kitty/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = co.rocketapps.Kitty;
@@ -573,26 +670,32 @@
 		};
 		83AB86481BF1533B00A543DB /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2FD321927D7426804834029F /* Pods.debug.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_ENTITLEMENTS = "Kitty Share Extension/Kitty_Share_Extension.entitlements";
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Mac Developer";
 				COMBINE_HIDPI_IMAGES = YES;
 				INFOPLIST_FILE = "Kitty Share Extension/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @executable_path/../../../../Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "co.rocketapps.Kitty.Kitty-Share-Extension";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 				SKIP_INSTALL = YES;
 			};
 			name = Debug;
 		};
 		83AB86491BF1533B00A543DB /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8EDAB63DE3E0D3F808444851 /* Pods.release.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_ENTITLEMENTS = "Kitty Share Extension/Kitty_Share_Extension.entitlements";
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Mac Developer";
 				COMBINE_HIDPI_IMAGES = YES;
 				INFOPLIST_FILE = "Kitty Share Extension/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @executable_path/../../../../Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "co.rocketapps.Kitty.Kitty-Share-Extension";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 				SKIP_INSTALL = YES;
 			};
 			name = Release;
@@ -616,6 +719,7 @@
 				83AB862D1BF1531700A543DB /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		83AB862E1BF1531700A543DB /* Build configuration list for PBXNativeTarget "KittyTests" */ = {
 			isa = XCConfigurationList;
@@ -624,6 +728,7 @@
 				83AB86301BF1531700A543DB /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		83AB86311BF1531700A543DB /* Build configuration list for PBXNativeTarget "KittyUITests" */ = {
 			isa = XCConfigurationList;
@@ -632,6 +737,7 @@
 				83AB86331BF1531700A543DB /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		83AB86471BF1533B00A543DB /* Build configuration list for PBXNativeTarget "Kitty Share Extension" */ = {
 			isa = XCConfigurationList;
@@ -640,6 +746,7 @@
 				83AB86491BF1533B00A543DB /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

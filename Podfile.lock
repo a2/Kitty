@@ -1,0 +1,19 @@
+PODS:
+  - KittyKit (0.0.1)
+
+DEPENDENCIES:
+  - KittyKit (from `https://github.com/DanielTomlinson/KittyKit.git`)
+
+EXTERNAL SOURCES:
+  KittyKit:
+    :git: https://github.com/DanielTomlinson/KittyKit.git
+
+CHECKOUT OPTIONS:
+  KittyKit:
+    :commit: c929d8e951ebae5a022db6e4cf0c3da93dafb4d3
+    :git: https://github.com/DanielTomlinson/KittyKit.git
+
+SPEC CHECKSUMS:
+  KittyKit: 659ee6957222ed5f87789e514fd0ef9fe3da29d4
+
+COCOAPODS: 0.39.0
